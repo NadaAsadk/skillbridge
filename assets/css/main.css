@@ -875,7 +875,7 @@ header .auth a:hover{
     width: 100%;
     padding: 50px;
     background: var(--absolute-white, #FFF);
-    border-radius: 14px 14px 0px 0px;
+    border-radius: 12px;
 }
 
 .free-sec,
