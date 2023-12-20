@@ -101,7 +101,6 @@ svg:hover {
 
 header {
     position: sticky;
-    position: relative;
     top: 0;
     border-bottom: 1px solid var(--White-95, #F1F1F3);
     z-index: 10;
