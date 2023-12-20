@@ -29,7 +29,7 @@ header .container .auth .burger .nav_burger ul {
     border-radius: 12px;
     right: 0;
     top: 80px;
-    width: calc(100% / 5);
+    width: calc(100% / 4);
 
 }
 
@@ -52,8 +52,14 @@ header .container .auth .burger .nav_burger ul li a {
     text-align: center;
     border-radius: 0px;
 }
+header .container .auth .burger .nav_burger ul li:first-of-type a{
+    border-top:0px;
+}
+header .container .auth .burger .nav_burger ul li:last-of-type a{
+    border-bottom:0px;
+}
 header .container .auth .burger a:hover .burger .nav_burger{
-    display: none;   
+    display:none;   
 }
 header .container .auth .burger a:hover{
     transform: scale(1);
