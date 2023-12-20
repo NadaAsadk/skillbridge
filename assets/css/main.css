@@ -9,6 +9,58 @@
 header .burger {
     display: none;
 }
+header .container .auth .burger .nav_burger{
+    display: none;
+    width:0px;
+    border: 2px solid #FFF;
+}
+header .container .auth .burger:hover .nav_burger{
+    display: contents;
+}
+
+header .container .auth .burger .nav_burger ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #FF9500;
+    border-radius: 12px;
+    right: 0;
+    top: 80px;
+    width: calc(100% / 5);
+
+}
+
+header .container .auth .burger .nav_burger ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7F7F8;
+    width: 100%;
+}
+
+header .container .auth .burger .nav_burger ul li a {
+    font-size: 16px;
+    color: #F1F1F3;
+    padding: 10px;
+    width: 100%;
+    border-top:2px solid #FFF;
+    border-bottom:2px solid #FFF;
+    text-align: center;
+    border-radius: 0px;
+}
+header .container .auth .burger a:hover .burger .nav_burger{
+    display: none;   
+}
+header .container .auth .burger a:hover{
+    transform: scale(1);
+    background-color: #d77e00;
+}
+
+
 
 body {
     background: var(--white-97, #F7F7F8);
@@ -17,12 +69,15 @@ body {
 a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     transform: scale(1.1);
 }
-svg:hover{
+
+svg:hover {
     transform: scale(1.2);
 }
+
 .container {
     width: calc(100% - 120px);
     margin: auto;
@@ -40,16 +95,19 @@ svg:hover{
 
 header {
     position: sticky;
+    position: relative;
     top: 0;
     border-bottom: 1px solid var(--White-95, #F1F1F3);
     z-index: 10;
     background: var(--white-97, #F7F7F8);
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
-header svg:hover{
+
+header svg:hover {
     transform: scale(1.2);
 }
-header .container{
+
+header .container {
     padding: 20px 0px;
     display: flex;
     flex-direction: row;
@@ -58,7 +116,8 @@ header .container{
     gap: 50px;
 
 }
-header .container .row{
+
+header .container .row {
     display: flex;
     align-items: center;
 }
@@ -70,7 +129,7 @@ header .container .row .logo {
     align-items: center;
 }
 
- header .logo svg {
+header .logo svg {
     background-color: #FF9500;
     border-radius: 8px;
     background: var(--orange-50, #FF9500);
@@ -129,7 +188,7 @@ header .auth {
 }
 
 
-header .auth a{
+header .auth a {
     color: var(--grey-15, #262626);
     font-family: Be Vietnam Pro;
     font-size: 14px;
@@ -148,7 +207,7 @@ header .auth a:hover {
     align-items: center;
 }
 
-header .auth a:hover{
+header .auth a:hover {
     transform: scale(1.2);
 }
 
@@ -169,7 +228,7 @@ header .auth a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 .hero .container .content .hero-sec1 .row {
@@ -317,6 +376,7 @@ header .auth a:hover{
     width: calc(100% / 7);
     border-right: 2px solid var(--white-95, #F1F1F3);
 }
+
 .comp .comp-logo:hover {
     transform: scale(1.1);
 }
@@ -441,6 +501,7 @@ header .auth a:hover{
     background: var(--white-99, #FCFCFD);
 
 }
+
 .benefits .benefits-sec1 a:hover,
 .courses .courses-sec1 a:hover,
 .testimonials .testimonial-sec1 a:hover {
@@ -472,15 +533,14 @@ header .auth a:hover{
 .pricing .pro-sec:hover {
     transform: scale(1.05);
 }
-.benefits .benefit-card:hover h3{
+
+.benefits .benefit-card:hover h3 {
     color: var(--grey-15, #FF9500);
 }
 
 .benefits .benefit-card h3 {
     color: var(--grey-15, #262626);
     text-align: right;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Be Vietnam Pro;
     font-size: 60px;
     font-style: normal;
@@ -944,7 +1004,12 @@ header .auth a:hover{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 30px;
+    padding: 20px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    border-radius: 10px 10px 0px 0px;
+    background: var(--Absolute-White, #FFF);
+
+
 }
 
 .free-sec .plan h3,
@@ -964,6 +1029,7 @@ header .auth a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .free-sec .plan ul li,
@@ -1008,9 +1074,11 @@ header .auth a:hover{
     height: 16px;
     box-sizing: content-box;
 }
-li:hover #not_available{
+
+li:hover #not_available {
     background-color: red;
 }
+
 .free-sec a,
 .pro-sec a {
     color: var(--absolute-white, #FFF);
@@ -1166,6 +1234,7 @@ footer .footer-end .footer-item li {
     line-height: 150%;
     /* 24px */
 }
+
 footer .footer-end .footer-item li:hover {
     transform: scale(1.1);
 }
@@ -1193,8 +1262,9 @@ footer .footer-end .footer-item svg {
     border: 1px solid var(--white-95, #F1F1F3);
     background: var(--white-97, #F7F7F8);
 }
+
 footer .footer-end .footer-item svg:hover {
-    background:#FF9500;
+    background: #FF9500;
 }
 
 
@@ -1208,11 +1278,13 @@ footer .container p:last-of-type {
     line-height: 150%;
     /* 21px */
 }
+
 @media screen and (max-width:2000px) {
-    body{
+    body {
         font-size: xx-large;
     }
 }
+
 @media screen and (max-width:1200px) {
     .logo h1 {
         font-size: 39px;
@@ -1272,9 +1344,11 @@ footer .container p:last-of-type {
     .hero .content .auth a {
         font-size: 14px;
     }
-    .comp .container{
+
+    .comp .container {
         overflow-x: scroll;
     }
+
     .comp .comp-logo {
         width: calc((100% - 50px) / 6);
     }
@@ -1287,7 +1361,7 @@ footer .container p:last-of-type {
     .pricing .container .converting-sec .pro-sec {
         width: 100%;
     }
-    
+
     .benefits .container .benefits-sec1,
     .courses .container .courses-sec1,
     .testimonials .container .testimonial-sec1,
@@ -1388,10 +1462,11 @@ footer .container p:last-of-type {
     .container {
         width: calc(100% - 100px);
     }
-    
+
     .hero .container .content .logo h1 {
         font-size: 20px;
     }
+
     .hero .container .content .hero-sec1 .logo svg:first-of-type {
         width: 30px;
         height: 30px;
@@ -1430,33 +1505,64 @@ footer .container p:last-of-type {
 }
 
 @media screen and (max-width:512px) {
+    
     header .container .row .logo svg {
         width: 29.63px;
         height: 29.63px;
         flex-shrink: 0;
     }
-
+    header .container .auth .burger .nav_burger ul li a {
+        font-size: 14px;
+    }
     .hero .container .content .hero-sec1 .logo h1 {
         font-size: 14px;
     }
-    .hero .container .content .hero-sec1 .logo{
+
+    .hero .container .contenft .hero-sec1 .logo {
         padding: 0px 20px;
         width: fit-content;
     }
+
     .container {
         width: calc(100% - 60px);
     }
+
     .comp .comp-logo {
         width: calc((100% - 50px) / 4);
     }
-    footer .container .row .footer-end .footer-item{
-        width:calc((100% - 30px) / 2);
+
+    .pricing .container .converting-sec .free-sec .card .plan ul li svg,
+    .pricing .container .converting-sec .pro-sec .card .plan ul li svg {
+        align-self: flex-start;
+        box-sizing: content-box;
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .pricing .container .converting-sec .free-sec .card .plan ul li p,
+    .pricing .container .converting-sec .pro-sec .card .plan ul li p {
+        font-size: 10px;
+    }
+
+    .pricing .container .converting-sec .free-sec .card .plan,
+    .pricing .container .converting-sec .pro-sec .card .plan {
+        gap: 20px;
+    }
+
+    footer .container .row .footer-end .footer-item {
+        width: calc((100% - 30px) / 2);
     }
 
 }
 
 @media screen and (max-width:430px) {
-
+    .container {
+        width: calc(100% - 32px);
+    }
+    header .container .auth .burger .nav_burger ul li a {
+        font-size: 12px;
+    }
 
     header .container {
         flex-wrap: nowrap;
@@ -1509,36 +1615,51 @@ footer .container p:last-of-type {
         font-size: 12px;
         padding: 8px 11px;
     }
+
     .testimonials .container .testimonial-cards .testimonial-card .sec1 a,
-    .testimonials .container .testimonial-cards .testimonial-card .sec1 .info p{
+    .testimonials .container .testimonial-cards .testimonial-card .sec1 .info p {
         font-size: 12px;
     }
-    footer .container .row .footer-end{
-        gap:30px;
+
+    .pricing .container .converting-sec {
+        padding: 20px;
+    }
+
+    .pricing .container .converting-sec .free-sec,
+    .pricing .container .converting-sec .pro-sec {
+        padding: 30px 20px 20px 20px;
+    }
+
+    footer .container .row .footer-end {
+        gap: 30px;
     }
 
 }
 
 @media screen and (max-width:330px) {
-    header .container .row .logo svg{
-        width:20px;
+    header .container .row .logo svg {
+        width: 20px;
         height: 20px;
     }
+
     header .container .auth a {
         font-size: 8px;
-        padding:10px 8px;
+        padding: 10px 8px;
     }
 
     .hero .container .content .hero-sec1 .logo h1 {
         font-size: 10px;
     }
-    .comp .container{
-        padding:20px 0px;
+
+    .comp .container {
+        padding: 20px 0px;
     }
+
     .comp .comp-logo {
         width: calc((100% - 50px) / 3);
     }
-    footer .container .row .footer-end .footer-item{
-        width:calc(100%);
+
+    footer .container .row .footer-end .footer-item {
+        width: calc(100%);
     }
 }
