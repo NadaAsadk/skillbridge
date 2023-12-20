@@ -62,7 +62,6 @@ header .container .auth .burger a:hover .burger .nav_burger{
     display:none;   
 }
 header .container .auth .burger a:hover{
-    transform: scale(1);
     background-color: #d77e00;
 }
 
@@ -966,7 +965,7 @@ header .auth .burger .nav_burger svg{
     align-self: stretch;
     border-radius: 14px 14px 0px 0px;
     border: 1px solid var(--white-95, #F1F1F3);
-    background: var(--absolute-white, #FFF);
+    background: var(--White-99, #FCFCFD);
 }
 
 .free-sec .title,
@@ -1016,10 +1015,11 @@ header .auth .burger .nav_burger svg{
 .pro-sec .plan {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 24px;
     padding: 20px;
     border: 1px solid var(--White-95, #F1F1F3);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 12px;
     background: var(--Absolute-White, #FFF);
 
 
@@ -1051,7 +1051,6 @@ header .auth .burger .nav_burger svg{
     padding: 12px;
     align-items: center;
     gap: 8px;
-    align-self: stretch;
     border-radius: 6px;
     border: 1px solid var(--white-95, #F1F1F3);
 }
